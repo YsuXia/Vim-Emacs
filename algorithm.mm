@@ -33,8 +33,7 @@
       <font color="#e40b0b"><b><i>1.&#20351;&#29992;vim&#30340;help&#26426;&#21046;</i></b></font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1489238895044" ID="ID_1381352482" MODIFIED="1489238991227">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -117,8 +116,7 @@
       <font color="#ee0d0d">&#21478;&#22806;&#19968;&#31181;&#26159;&#29992;libclang</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1489245252948" FOLDED="true" ID="ID_597161795" MODIFIED="1489325497293" TEXT="1.&#x63cf;&#x8ff0;">
 <node CREATED="1489245453170" ID="ID_1168954070" MODIFIED="1489245551485">
 <richcontent TYPE="NODE"><html>
@@ -167,12 +165,30 @@
 </node>
 </node>
 <node CREATED="1489245313171" ID="ID_1160911658" MODIFIED="1489325324663" TEXT="3.&#x914d;&#x7f6e;">
-<node CREATED="1489288298033" ID="ID_1979334504" MODIFIED="1489288964637">
+<node CREATED="1489288298033" ID="ID_1979334504" MODIFIED="1489746672678">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      <b><i>&#37197;&#32622;clang&#21160;&#24577;&#24211;&#30340;&#20301;&#32622;</i></b>
+    </p>
+    <p>
+      &quot; path to directory where library can be found
+    </p>
+    <p>
+      &#160;let g:clang_library_path='/usr/lib/llvm-3.8/lib'
+    </p>
+    <p>
+      &#160;&quot; or path directly to the library file
+    </p>
+    <p>
+      &#160;let g:clang_library_path='/usr/lib64/libclang.so.3.8'
+    </p>
+    <p>
+      
+    </p>
     <p>
       &#27599;&#19968;&#20010;&#24037;&#31243;&#22312;&#23427;&#30340;&#26681;&#30446;&#24405;&#19979;&#38754;&#37117;&#21487;&#20197;&#26377;&#19968;&#20010;.clang_complete&#25991;&#20214;,
     </p>
@@ -207,10 +223,11 @@
       <font color="#e21515">&#160;-I/usr/include/c++/4.5.3/x86_64-slackware-linux/</font>
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 </node>
-<node CREATED="1489245340699" ID="ID_709968079" MODIFIED="1489325555936" TEXT="4.&#x9009;&#x9879;">
+<node CREATED="1489245340699" FOLDED="true" ID="ID_709968079" MODIFIED="1489746691159" TEXT="4.&#x9009;&#x9879;">
 <node CREATED="1489290366882" ID="ID_1639984671" MODIFIED="1489290466130">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -295,7 +312,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1489298452248" ID="ID_1741026918" MODIFIED="1489299146388">
+<node CREATED="1489298452248" FOLDED="true" ID="ID_1741026918" MODIFIED="1489746689977">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -568,8 +585,7 @@
       1.&#26368;&#31616;&#21333;&#30340;&#26041;&#27861;&#26159;Ctrl+N, Ctrl+P&#36827;&#34892;&#34917;&#20840;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1489313464117" ID="ID_886254093" MODIFIED="1489325244691">
@@ -585,8 +601,7 @@
       <b><i>&#35813;&#25554;&#20214;&#33258;&#21160;&#23558;&lt;Tab&gt;&#25353;&#38190;&#26144;&#23556;&#25104;&#33258;&#21160;&#34917;&#20840;&#30340;&#21629;&#20196;</i></b>&#12290;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1489314481748" ID="ID_1492095171" MODIFIED="1489314679173">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -628,8 +643,7 @@
       <b><i>snipMate&#25554;&#20214;&#21487;&#20197;&#29992;&#26469;&#36827;&#34892;&#20195;&#30721;&#30340;&#33258;&#21160;&#34917;&#20840;</i></b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1489239274111" ID="ID_955492603" MODIFIED="1489239304726">
@@ -721,7 +735,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1489244194404" ID="ID_140666524" MODIFIED="1489244464048">
+<node CREATED="1489244194404" ID="ID_140666524" MODIFIED="1489746323649">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -745,8 +759,10 @@
     <p>
       &#35813;&#25554;&#20214;&#30340;&#24110;&#21161;&#25991;&#26723;&#20063;&#21487;&#20197;&#34987;&#27491;&#30830;&#22320;&#23433;&#35013;&#20102;&#12290;
     </p>
+    <b>vim clang_complete.vmb -c 'so %' -c 'q'</b>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node CREATED="1489244468033" ID="ID_811216766" MODIFIED="1489244517815">
 <richcontent TYPE="NODE"><html>
@@ -783,6 +799,40 @@
 </node>
 </node>
 </node>
+<node CREATED="1489745573579" ID="ID_1125623218" MODIFIED="1489746189576">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#25991;&#20214;&#31867;&#22411;&#25554;&#20214;:
+    </p>
+    <p>
+      vim&#20998;&#21457;&#29256;&#26412;&#33258;&#24102;&#20102;&#20026;&#19981;&#21516;&#30340;&#25991;&#20214;&#31867;&#22411;&#20934;&#22791;&#30340;&#25554;&#20214;&#38598;&#21512;&#65292;&#20320;&#21487;&#20197;&#36890;&#36807;&#22914;&#19979;&#30340;&#21629;&#20196;
+    </p>
+    <p>
+      &#26469;&#21551;&#21160;&#36825;&#20123;&#25554;&#20214;
+    </p>
+    <p>
+      :filetype plugin on
+    </p>
+    <p>
+      &#22914;&#20309;&#28155;&#21152;&#19968;&#20010;&#36319;&#25991;&#20214;&#31867;&#22411;&#26377;&#20851;&#30340;&#25554;&#20214;:
+    </p>
+    <p>
+      1. Get a copy of the plugin.
+    </p>
+    <p>
+      2. Drop it in the right directory.
+    </p>
+    <p>
+      &#23558;&#25554;&#20214;&#30452;&#25509;&#25918;&#32622;&#21040;&#36335;&#24452;~/.vim/ftplugin/&#19979;&#38754;&#23601;&#21487;&#20197;&#20102;&#12290;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>
@@ -799,8 +849,7 @@
       libstdc++ &#26159;gnu linux&#20351;&#29992;&#30340;c++&#26631;&#20934;&#24211;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
