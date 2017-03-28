@@ -117,7 +117,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1489245252948" FOLDED="true" ID="ID_597161795" MODIFIED="1489325497293" TEXT="1.&#x63cf;&#x8ff0;">
+<node CREATED="1489245252948" FOLDED="true" ID="ID_597161795" MODIFIED="1490702371133" TEXT="1.&#x63cf;&#x8ff0;">
 <node CREATED="1489245453170" ID="ID_1168954070" MODIFIED="1489245551485">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -137,7 +137,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1489245272371" FOLDED="true" ID="ID_1075183295" MODIFIED="1489325494685">
+<node CREATED="1489245272371" FOLDED="true" ID="ID_1075183295" MODIFIED="1490702372669">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -223,11 +223,10 @@
       <font color="#e21515">&#160;-I/usr/include/c++/4.5.3/x86_64-slackware-linux/</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1489245340699" FOLDED="true" ID="ID_709968079" MODIFIED="1489746691159" TEXT="4.&#x9009;&#x9879;">
+<node CREATED="1489245340699" ID="ID_709968079" MODIFIED="1490702407643" TEXT="4.&#x9009;&#x9879;">
 <node CREATED="1489290366882" ID="ID_1639984671" MODIFIED="1489290466130">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -527,7 +526,7 @@
 </html></richcontent>
 </node>
 <node CREATED="1489245389178" ID="ID_507399763" MODIFIED="1489245396681" TEXT="6.PCH"/>
-<node CREATED="1489245410876" FOLDED="true" ID="ID_1285174127" MODIFIED="1489325503541">
+<node CREATED="1489245410876" FOLDED="true" ID="ID_1285174127" MODIFIED="1490702406277">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -761,8 +760,7 @@
     </p>
     <b>vim clang_complete.vmb -c 'so %' -c 'q'</b>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1489244468033" ID="ID_811216766" MODIFIED="1489244517815">
 <richcontent TYPE="NODE"><html>
@@ -830,8 +828,7 @@
       &#23558;&#25554;&#20214;&#30452;&#25509;&#25918;&#32622;&#21040;&#36335;&#24452;~/.vim/ftplugin/&#19979;&#38754;&#23601;&#21487;&#20197;&#20102;&#12290;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -851,6 +848,19 @@
   </body>
 </html></richcontent>
 </node>
+</node>
+<node CREATED="1490703187781" ID="ID_557719167" MODIFIED="1490703211824" POSITION="left">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><i>thinking in C++ volum 1</i></b>
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </map>
