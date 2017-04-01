@@ -859,8 +859,8 @@
       <b><i>thinking in C++ volum 1</i></b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
+<node CREATED="1491029955850" ID="ID_416102290" MODIFIED="1491029966375" POSITION="right" TEXT="https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms"/>
 </node>
 </map>
