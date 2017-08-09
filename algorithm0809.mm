@@ -1100,6 +1100,60 @@
     </p>
   </body>
 </html></richcontent>
+<node CREATED="1496813580518" ID="ID_397646155" MODIFIED="1496813610263">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      C++ and C Standards are usually named after the year they are published in,
+    </p>
+    <p>
+      which makes it easier to remember by.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      For example, in C++, the original Standard was published in 1998, so we talk about C++98,
+    </p>
+    <p>
+      and when we refer to its first correction, published in 2003, we talk about C++03.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      It had been purported that the next Standard after would be done for 2008,
+    </p>
+    <p>
+      but since it was uncertain, it was dubbed C++0x, where the x stood for either 8 or 9.
+    </p>
+    <p>
+      In practice though, as we all know, the planning shifted and so we end-up with C++11.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Still, for the next version (C++1x), Bjarne Stroustrup stated his intent to do it in 5 years (so about 2016).
+    </p>
+    <p>
+      For now, there are changes envisionned to the core language (concepts, modules and garbage collection),
+    </p>
+    <p>
+      &#160;and the focus seems to be more on extending the library (filesystem for example), but it's still early so who knows!
+    </p>
+  </body>
+</html></richcontent>
+</node>
 </node>
 </node>
 <node CREATED="1490703187781" ID="ID_557719167" MODIFIED="1490703211824" POSITION="left">
@@ -1113,8 +1167,135 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1492139827807" ID="ID_30269152" MODIFIED="1492139831564" TEXT="https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms "/>
+<node CREATED="1498617972805" ID="ID_265630277" MODIFIED="1498617991564">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>&#30058;&#22806;&#31687;&#31456;</b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1498617994917" ID="ID_235765807" MODIFIED="1498618008285" TEXT="c++11 &#x7279;&#x6027;&#x5b66;&#x4e60;">
+<node CREATED="1498618012093" ID="ID_76381881" MODIFIED="1498618115958">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>1.c++11&#30340;&#26234;&#33021;&#25351;&#38024;</b>
+    </p>
+    <p>
+      C++11&#25552;&#20379;&#20102;&#19977;&#31181;&#26234;&#33021;&#25351;&#38024;&#65306;std::shared_ptr, std::unique_ptr, std::weak_ptr&#65292;
+    </p>
+    <p>
+      &#20351;&#29992;&#26102;&#38656;&#28155;&#21152;&#22836;&#25991;&#20214;&lt;memory&gt;
+    </p>
+  </body>
+</html></richcontent>
 </node>
-<node CREATED="1492139848478" ID="ID_348798601" MODIFIED="1492139861340" POSITION="left" TEXT="&#x7b97;&#x6cd5;&#x5bfc;&#x8bba;&#x7ae0;&#x8282;&#x5b66;&#x4e60;"/>
+<node CREATED="1498618511892" ID="ID_661398725" MODIFIED="1498618546813">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>2. final&#20851;&#38190;&#23383;</b>
+    </p>
+    <p>
+      final&#20851;&#38190;&#23383;&#29992;&#26469;&#34920;&#26126;&#35813;&#31867;&#19981;&#24819;&#34987;&#32487;&#25215;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1501579857810" ID="ID_1387230490" MODIFIED="1501587280106">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#d40e0e"><b>auto&#20851;&#38190;&#23383;</b></font>
+    </p>
+    <p>
+      auto&#21487;&#20197;&#22312;&#22768;&#26126;&#21464;&#37327;&#30340;&#26102;&#20505;&#26681;&#25454;&#21464;&#37327;&#21021;&#22987;&#20540;&#30340;&#31867;&#22411;&#65292;
+    </p>
+    <p>
+      &#33258;&#21160;&#20026;&#27492;&#21464;&#37327;&#36873;&#25321;&#21305;&#37197;&#30340;&#31867;&#22411;&#12290;
+    </p>
+    <p>
+      int a = 10;
+    </p>
+    <p>
+      auto au_a = a;//&#33258;&#21160;&#31867;&#22411;&#25512;&#26029;&#65292;au_a&#20026;int&#31867;&#22411;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1499670069118" ID="ID_1051752215" MODIFIED="1499670159646">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#b40a0a"><b>c++&#30340;&#26631;&#20934;&#36716;&#25442;&#36816;&#31639;&#31526;</b></font>
+    </p>
+    <p>
+      reinterpret_cast
+    </p>
+    <p>
+      static_cast
+    </p>
+    <p>
+      const_cast
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1498618133029" ID="ID_1363343916" MODIFIED="1498618151894">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><i>&#21442;&#32771;&#36164;&#26009;&#38142;&#25509;</i></b>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1498618156205" ID="ID_473664458" MODIFIED="1498618179453">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      https://github.com/huaxz1986/cplusplus-_Implementation_Of_Introduction_to_Algorithms&#160;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1492139848478" ID="ID_348798601" MODIFIED="1498618200261" POSITION="left">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><i>&#31639;&#27861;&#23548;&#35770;&#31456;&#33410;&#23398;&#20064;</i></b>
+    </p>
+  </body>
+</html></richcontent>
+</node>
 </node>
 </map>
