@@ -100,7 +100,7 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1489245216564" FOLDED="true" ID="ID_963789422" MODIFIED="1492157419612">
+<node CREATED="1489245216564" FOLDED="true" ID="ID_963789422" MODIFIED="1505729524551">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -650,6 +650,61 @@
 <node CREATED="1492506246859" ID="ID_1396111931" MODIFIED="1492506302547" TEXT="2.&#x8fdb;&#x5165;&#x5230;&#x76ee;&#x5f55;majutsushi-tagbar-53e9cb0/plugin&#x5f53;&#x4e2d;&#x5c06;tagbar.vim&#x62f7;&#x8d1d;&#x5230;&#x76ee;&#x5f55;~/.vim/plugin&#x5f53;&#x4e2d;"/>
 <node CREATED="1492506330489" ID="ID_528959910" MODIFIED="1492506354129" TEXT="3.&#x8fdb;&#x5165;&#x5230;&#x76ee;&#x5f55;majutsushi-tagbar-53e9cb0/doc&#x5f53;&#x4e2d;&#x5c06;tagbar.txt&#x62f7;&#x8d1d;&#x5230;&#x76ee;&#x5f55;~/.vim/doc&#x5f53;&#x4e2d;"/>
 <node CREATED="1492506373926" ID="ID_300280941" MODIFIED="1492506425614" TEXT="4.&#x8fd0;&#x884c;&#x547d;&#x4ee4;:helptags ~/.vim/doc&#x751f;&#x6210;tagbar&#x7684;&#x5e2e;&#x8db3;&#x6587;&#x6863;"/>
+</node>
+<node CREATED="1505731972005" ID="ID_907974528" MODIFIED="1505731999829">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>vundle&#30340;&#23433;&#35013;</b>
+    </p>
+    <p>
+      https://github.com/VundleVim/Vundle.vim
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1505732331539" ID="ID_1441124672" MODIFIED="1505732355812">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>&#23433;&#35013;ycm</b>
+    </p>
+    <p>
+      https://github.com/Valloric/YouCompleteMe#full-installation-guide
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1505737586849" ID="ID_1847606966" MODIFIED="1505737612867">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>vimrc&#30340;&#37197;&#32622;:</b>
+    </p>
+    <p>
+      let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+    </p>
+    <p>
+      set completeopt=longest,menu&#160;&#160;&#160;&#160;&quot;&#35753;Vim&#30340;&#34917;&#20840;&#33756;&#21333;&#34892;&#20026;&#19982;&#19968;&#33324;IDE&#19968;&#33268;(&#21442;&#32771;VimTip1228)
+    </p>
+    <p>
+      autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+    </p>
+    <p>
+      inoremap &lt;expr&gt; &lt;CR&gt; pumvisible()? &quot;\&lt;C-y&gt;&quot; : &quot;\&lt;CR&gt;&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 <node CREATED="1489239274111" ID="ID_955492603" MODIFIED="1492157149218">
@@ -1234,8 +1289,7 @@
       auto au_a = a;//&#33258;&#21160;&#31867;&#22411;&#25512;&#26029;&#65292;au_a&#20026;int&#31867;&#22411;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1499670069118" ID="ID_1051752215" MODIFIED="1499670159646">
