@@ -702,8 +702,7 @@
       inoremap &lt;expr&gt; &lt;CR&gt; pumvisible()? &quot;\&lt;C-y&gt;&quot; : &quot;\&lt;CR&gt;&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1291,6 +1290,7 @@
   </body>
 </html></richcontent>
 </node>
+<node CREATED="1508840305626" ID="ID_1245788553" MODIFIED="1508840313963" TEXT="c++ 11&#x5185;&#x5b58;&#x6a21;&#x578b;"/>
 </node>
 <node CREATED="1499670069118" ID="ID_1051752215" MODIFIED="1499670159646">
 <richcontent TYPE="NODE"><html>
