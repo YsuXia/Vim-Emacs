@@ -1,3 +1,14 @@
+set nocompatible
+filetype on
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+call vundle#end()
+filetype plugin indent on
+
 colorscheme torte
 func LoadCscope() 
 if has("cscope")  
@@ -46,7 +57,7 @@ let mapleader=","
 map <silent> <leader>ss :source ~/.vimrc<cr>
 map <silent> <leader>ee :e ~/.vimrc<cr>
 nmap <silent> <leader>tt :TagbarToggle<CR>
-nmap <F8> :w<CR>:!unflatten -l8 -c5 % |dot -Tpng -o %<.png && xdg-open %<.png<CR><CR>
+nmap <F8> :w<CR>:!unflatten -l8 -c5 % |dot -Tpng -o %<.png && viewnior  %<.png &<CR><CR>
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -54,10 +65,13 @@ set pastetoggle=<F2>
 nnoremap <silent> <F5> zfa}<CR>
 nnoremap <silent> <F6> zo<CR>
 
-let g:clang_library_path='/usr/lib/llvm-3.8/lib/libclang.so.1'
-let g:clang_complete_auto=1
-let g:clang_use_library = 1
+"let g:clang_library_path='/usr/lib/llvm-3.8/lib/libclang.so.1'
+"let g:clang_complete_auto=1
+"let g:clang_use_library = 1
+"let g:clang_user_options='-stdlib=libc++ -std=c++11'
 set tags=./tags,tags
+set tags+=$HOME/.vim/tags/cpp
+set tags+=$HOME/.vim/tags/opencv2
 
 
 function! Demo()
@@ -74,9 +88,22 @@ function! GenerateAndLoadCurrentDirTags()
 	set tags=/tmp
 endf
 nmap <silent><leader>cc :call GenerateAndLoadCurrentDirTags()<CR>
+nmap <silent><leader>dp :call DriverProgramSupport()<CR>
+nmap <silent><leader>cpp :call CppProgramSupport()<CR>
 
 
+function! ConfigKernel(kerneldir, arch, subarch)
+	let lkerneldir=a:kerneldir
+	let larch=a:arch
+	let lsubarch=a:subarch
+	"echo "xiayang:" lkerneldir
+	execute '! kernel-ctags' a:kerneldir
+endfunc
+
+"this function work very well, when I develop driver code
 function! DriverProgramSupport()
+	"call system('rm -f ${HOME}/.vim/plugin/YouCompleteMe')
+	"call system('ln -s $HOME/bin/omnicppcomplete-0.41 $HOME/.vim/omnicppcomplete-0.41')
 	let choice=input('Do you want to use your host kernel head file?[Y/N]: ')
 	if choice == "Y" || choice == "y"
 		echo "\n"
@@ -85,10 +112,45 @@ function! DriverProgramSupport()
 		let host_kernel_dir= "/lib/modules/" . linux_version . "/build"
 		echo host_kernel_dir
 	else
-		echo 'test'
+		let kerneldir=input('Please input your kernel source dir: ')
+		let arch=input('Please input your development arch:')
+		let subarch=input('Please input your development subarch:')
+		call ConfigKernel(kerneldir, arch, subarch)
 	endif
+	"althouth kernel src maybe different dir, cscope.out and tags will
+	"generate at current dir
 endfunc
 
+function! CppProgramSupport()
+	"call system('ln -s $HOME/bin/YouCompleteMe  ${HOME}/.vim/plugin/YouCompleteMe')
+	"call system('rm -f  $HOME/.vim/omnicppcomplete-0.41')
+endfunc
+
+
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger='<c-d>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/bundle/vim-snippets/UltiSnips']
+
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
+
+if has("autocmd")
+    autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+endif 
 
 
 
