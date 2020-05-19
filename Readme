@@ -1,0 +1,4 @@
+1. unzip the vundle.vim to ~/.vim/bundle
+2. copy the tags to ~/.vim/tags
+3. install tagbar
+4. install omnicppcomplete
